@@ -18,7 +18,7 @@ namespace DAT_src
                 if (string.IsNullOrWhiteSpace(input))
                     continue;
 
-                // Basic split – first word = command, rest = arguments
+                // split for args – first word = command, rest = arguments
                 string[] parts = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
                 if (parts.Length == 0) continue;
 
@@ -26,7 +26,7 @@ namespace DAT_src
                 string arg1 = parts.Length > 1 ? parts[1] : "";
                 string rest = "";
 
-                // Take everything after command + first arg (good for write/echo messages)
+                // After command
                 if (parts.Length > 2)
                 {
                     int firstSpace = input.IndexOf(' ');
@@ -107,3 +107,4 @@ namespace DAT_src
     }
 
 }
+
