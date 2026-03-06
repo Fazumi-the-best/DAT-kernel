@@ -11,7 +11,6 @@ namespace DAT_src
     {
         Sys.FileSystem.CosmosVFS fs = new Cosmos.System.FileSystem.CosmosVFS();
         string currentDir = @"0:\";
-        FXRenderer renderer = new FXRenderer();
         protected override void BeforeRun()
         {
             Shell.CurrentDirectory = @"0:\";
@@ -307,3 +306,4 @@ namespace DAT_src
     }
 
 }
+
